@@ -1,0 +1,11 @@
+{
+  "name": "Arish Limbu — Developer in Progress",
+  "short_name": "Arish Limbu",
+  "description": "A portfolio of projects built while learning software engineering.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f2ea",
+  "theme_color": "#f5f2ea",
+  "lang": "en"
+}
