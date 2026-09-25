@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arish0limbu.github.io/My-website/sitemap.xml
