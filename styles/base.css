@@ -1,0 +1,11 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); line-height: 1.65; transition: background-color .25s ease, color .25s ease; }
+button, a { font: inherit; }
+a { color: inherit; text-decoration-thickness: .08em; text-underline-offset: .2em; }
+button { color: inherit; }
+img, svg { display: block; max-width: 100%; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { line-height: 1.08; }
+::selection { background: var(--lime); color: var(--night); }
+section[id] { scroll-margin-top: 6rem; }
