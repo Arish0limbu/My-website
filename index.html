@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f2ea" />
+    <meta name="description" content="Arish Limbu is a BIT student and aspiring software engineer who learns by building useful projects." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arish Limbu — Developer in Progress" />
+    <meta property="og:description" content="Curious by nature. Building as I learn." />
+    <meta property="og:image" content="https://arish0limbu.github.io/My-website/assets/social-card.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://arish0limbu.github.io/My-website/" />
+    <link rel="canonical" href="https://arish0limbu.github.io/My-website/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Arish Limbu — Developer in Progress</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#top" aria-label="Arish Limbu, home">AL<span aria-hidden="true">.</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="menu-toggle-label">Menu</span><span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#learning">Learning</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch color theme"><span aria-hidden="true">◐</span></button>
+        <a class="header-link" href="https://github.com/Arish0limbu" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy-block">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> BIT student · aspiring software engineer</p>
+          <h1 id="hero-title">Curious by nature.<br /><em>Building as I learn.</em></h1>
+          <p class="hero-copy">Hi, I’m Arish Limbu. I’m studying information technology and learning software engineering by making useful, thoughtful projects.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="https://github.com/Arish0limbu" target="_blank" rel="noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-sun"></div><span class="art-star star-one">✳</span><span class="art-star star-two">✳</span>
+          <div class="art-caption"><span>LEARNING</span><span>BY BUILDING</span></div>
+        </div>
+        <div class="hero-footnote"><span class="footnote-line"></span><span>Small experiments.<br />Steady progress.</span><span class="hero-location">Itahari, Nepal</span></div>
+      </section>
+
+      <section class="about section container" id="about" aria-labelledby="about-title">
+        <div class="section-label"><span>01</span> A little about me</div>
+        <div class="about-copy">
+          <h2 id="about-title">I learn best by <em>making things.</em></h2>
+          <p>I’m a Bachelor of Information Technology student at Kasturi College and an aspiring software engineer. I like learning how things work, then turning that curiosity into something I can share.</p>
+          <p>My projects range from interactive web experiences to Python tools and C++ applications. Each one gives me a new way to practice and get better at building.</p>
+        </div>
+      </section>
+
+      <section class="projects section container" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div class="section-label"><span>02</span> Selected projects</div>
+          <h2 id="projects-title">Things I’ve <em>been building.</em></h2>
+          <p>A few projects from my GitHub. Each began with something I wanted to understand or make.</p>
+        </div>
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" data-filter="tools" aria-pressed="false">Tools</button>
+          <button type="button" data-filter="apps" aria-pressed="false">Applications</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-featured" data-category="apps">
+            <div class="project-topline"><span class="project-index">01</span><span class="project-type">Digital safety</span></div>
+            <h3>Cyber-Sathi</h3>
+            <p>An AI-powered security companion for checking suspicious links, messages, files, and more, with clear risk guidance.</p>
+            <ul class="tag-list" aria-label="Technologies and topics"><li>Security</li><li>AI</li><li>HTML</li></ul>
+            <a class="project-link" href="https://github.com/Arish0limbu/Cyber-Sathi" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card" data-category="tools">
+            <div class="project-topline"><span class="project-index">02</span><span class="project-type">Python CLI</span></div>
+            <h3>Break-Time</h3>
+            <p>A small helper for previewing staged Git changes and creating a commit only when explicitly requested.</p>
+            <ul class="tag-list" aria-label="Technologies and topics"><li>Python</li><li>Git</li><li>CLI</li></ul>
+            <a class="project-link" href="https://github.com/Arish0limbu/Break-TIme" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card" data-category="apps">
+            <div class="project-topline"><span class="project-index">03</span><span class="project-type">C++ application</span></div>
+            <h3>Employee Attendance System</h3>
+            <p>A role-based terminal app for employee records, attendance, and leave, saved in readable flat files.</p>
+            <ul class="tag-list" aria-label="Technologies and topics"><li>C++</li><li>File I/O</li><li>CLI</li></ul>
+            <a class="project-link" href="https://github.com/Arish0limbu/Project-II-EAMS" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card" data-category="web">
+            <div class="project-topline"><span class="project-index">04</span><span class="project-type">Interactive web</span></div>
+            <h3>She Wants Flowers</h3>
+            <p>A peaceful night garden where each tap or click grows a flower beneath a sky of stars.</p>
+            <ul class="tag-list" aria-label="Technologies and topics"><li>JavaScript</li><li>CSS</li><li>Creative coding</li></ul>
+            <a class="project-link" href="https://github.com/Arish0limbu/She-Wants-Flowers" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <p class="sr-only" id="project-status" aria-live="polite" aria-atomic="true"></p>
+        <p class="projects-more">More experiments live on <a href="https://github.com/Arish0limbu?tab=repositories" target="_blank" rel="noreferrer">my GitHub profile <span aria-hidden="true">↗</span></a>.</p>
+      </section>
+
+      <section class="learning section container" id="learning" aria-labelledby="learning-title">
+        <div class="learning-card">
+          <div class="section-label"><span>03</span> On my desk</div>
+          <div><h2 id="learning-title">Always a new thing <em>to learn.</em></h2><p>I’m exploring the building blocks of the web and practicing software fundamentals through projects in different languages.</p></div>
+          <ul class="topic-list" aria-label="Areas I am exploring"><li>Web development</li><li>Python</li><li>C++</li><li>Creative coding</li></ul>
+        </div>
+      </section>
+
+      <section class="contact section container" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner">
+          <div class="section-label"><span>04</span> Say hello</div>
+          <h2 id="contact-title">Good things start<br />with <em>a conversation.</em></h2>
+          <p>I’m always glad to connect with people who enjoy learning and building.</p>
+          <div class="contact-actions">
+            <a class="button button-light" href="https://github.com/Arish0limbu" target="_blank" rel="noreferrer">Connect on GitHub <span aria-hidden="true">↗</span></a>
+            <a class="contact-secondary" href="https://www.linkedin.com/in/arish-limbu" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <a class="wordmark" href="#top" aria-label="Back to top">AL<span aria-hidden="true">.</span></a>
+      <p>Designed and built while learning, one step at a time.</p>
+      <span>© <span id="current-year">2026</span> Arish Limbu</span>
+    </footer>
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>

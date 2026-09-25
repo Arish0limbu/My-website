@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Arish Limbu — Developer in Progress</title>
+  <desc id="desc">Curious by nature. Building as I learn.</desc>
+  <rect width="1200" height="630" fill="#f5f2ea"/>
+  <circle cx="1000" cy="-20" r="300" fill="#cce7d9"/>
+  <circle cx="1040" cy="18" r="210" fill="none" stroke="#15332f" stroke-opacity=".18" stroke-width="2"/>
+  <circle cx="1040" cy="18" r="154" fill="none" stroke="#15332f" stroke-opacity=".14" stroke-width="2"/>
+  <circle cx="1085" cy="108" r="66" fill="#e46b4f"/>
+  <path d="M870 425c68-81 140-114 219-100" fill="none" stroke="#15332f" stroke-opacity=".18" stroke-width="3" stroke-dasharray="8 14"/>
+  <text x="88" y="128" fill="#e46b4f" font-family="Arial, sans-serif" font-size="23" font-weight="700" letter-spacing="5">BIT STUDENT · ASPIRING SOFTWARE ENGINEER</text>
+  <text x="82" y="282" fill="#15332f" font-family="Georgia, serif" font-size="80" font-weight="600">Arish Limbu</text>
+  <text x="88" y="370" fill="#15332f" font-family="Arial, sans-serif" font-size="38">Curious by nature. Building as I learn.</text>
+  <rect x="88" y="452" width="244" height="62" rx="31" fill="#15332f"/>
+  <text x="210" y="492" fill="#f5f2ea" font-family="Arial, sans-serif" font-size="21" font-weight="700" text-anchor="middle">PORTFOLIO · ITAHARI, NEPAL</text>
+  <text x="1110" y="567" fill="#15332f" font-family="Georgia, serif" font-size="34" font-weight="700" text-anchor="end">AL.</text>
+</svg>
