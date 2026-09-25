@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Arish Limbu monogram</title>
+  <rect width="64" height="64" rx="18" fill="#15332f"/>
+  <text x="50%" y="55%" fill="#f5f2ea" font-family="Georgia, serif" font-size="27" font-weight="700" text-anchor="middle" dominant-baseline="middle">AL</text>
+  <circle cx="51" cy="47" r="3" fill="#e46b4f"/>
+</svg>
