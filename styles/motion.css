@@ -1,0 +1,21 @@
+/* Motion stays small, purposeful, and respectful of system preferences. */
+.hero-copy-block { animation: hero-arrive 760ms var(--ease-out-soft) both; }
+.hero-art { transform: translate3d(var(--pointer-x, 0), var(--pointer-y, 0), 0); transition: transform 300ms ease-out; }
+.art-orbit { animation: orbit-drift 48s linear infinite; transform-origin: center; }
+.orbit-two { animation-direction: reverse; animation-duration: 64s; }
+.art-sun { animation: sun-breathe 5s ease-in-out infinite alternate; }
+.art-star { animation: star-flicker 3.6s ease-in-out infinite alternate; }
+.star-two { animation-delay: -1.7s; }
+@keyframes hero-arrive { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes orbit-drift { to { rotate: 1turn; } }
+@keyframes sun-breathe { from { scale: .96; filter: saturate(.9); } to { scale: 1.04; filter: saturate(1.2); } }
+@keyframes star-flicker { from { opacity: .42; rotate: -12deg; } to { opacity: 1; rotate: 12deg; } }
+@keyframes reveal-rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+:root.has-motion [data-reveal] { opacity: 0; transform: translateY(22px); transition: opacity var(--motion-smooth) var(--ease-out-soft), transform var(--motion-smooth) var(--ease-out-soft); }
+:root.has-motion [data-reveal].is-visible { opacity: 1; transform: none; }
+:root.has-motion .project-card[data-reveal] { transition-delay: var(--reveal-delay, 0ms); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  :root.has-motion [data-reveal] { opacity: 1; transform: none; }
+  .hero-art { transform: none !important; }
+}
