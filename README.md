@@ -5,8 +5,8 @@ An accessible, responsive portfolio for Arish Limbu, a BIT student and aspiring 
 ## What is included
 
 - A single-page portfolio with About, Projects, Learning, and Contact sections
-- Responsive layouts, keyboard-friendly navigation, visible focus styles, and reduced-motion support
-- Project category filters and a saved light/dark theme preference
+- Responsive layouts, keyboard-friendly navigation, visible focus styles, and reduced-motion support; motion can also be paused with the Studio control
+- Project category filters, a saved light/dark theme preference, scroll reveals, and a creative prompt
 - A custom not-found page, social preview artwork, favicon, and browser manifest
 - Search metadata, a sitemap, and crawler rules
 

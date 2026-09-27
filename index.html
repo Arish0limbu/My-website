@@ -18,6 +18,7 @@
     <title>Arish Limbu — Developer in Progress</title>
   </head>
   <body>
+    <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
@@ -29,6 +30,7 @@
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#learning">Learning</a>
+          <a href="#studio">Studio</a>
           <a href="#contact">Contact</a>
         </nav>
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch color theme"><span aria-hidden="true">◐</span></button>
@@ -55,7 +57,7 @@
         <div class="hero-footnote"><span class="footnote-line"></span><span>Small experiments.<br />Steady progress.</span><span class="hero-location">Itahari, Nepal</span></div>
       </section>
 
-      <section class="about section container" id="about" aria-labelledby="about-title">
+      <section class="about section container" id="about" aria-labelledby="about-title" data-reveal>
         <div class="section-label"><span>01</span> A little about me</div>
         <div class="about-copy">
           <h2 id="about-title">I learn best by <em>making things.</em></h2>
@@ -64,7 +66,7 @@
         </div>
       </section>
 
-      <section class="projects section container" id="projects" aria-labelledby="projects-title">
+      <section class="projects section container" id="projects" aria-labelledby="projects-title" data-reveal>
         <div class="section-heading">
           <div class="section-label"><span>02</span> Selected projects</div>
           <h2 id="projects-title">Things I’ve <em>been building.</em></h2>
@@ -77,28 +79,28 @@
           <button type="button" data-filter="apps" aria-pressed="false">Applications</button>
         </div>
         <div class="project-grid">
-          <article class="project-card project-featured" data-category="apps">
+          <article class="project-card project-featured" data-category="apps" data-reveal>
             <div class="project-topline"><span class="project-index">01</span><span class="project-type">Digital safety</span></div>
             <h3>Cyber-Sathi</h3>
             <p>An AI-powered security companion for checking suspicious links, messages, files, and more, with clear risk guidance.</p>
             <ul class="tag-list" aria-label="Technologies and topics"><li>Security</li><li>AI</li><li>HTML</li></ul>
             <a class="project-link" href="https://github.com/Arish0limbu/Cyber-Sathi" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
           </article>
-          <article class="project-card" data-category="tools">
+          <article class="project-card" data-category="tools" data-reveal>
             <div class="project-topline"><span class="project-index">02</span><span class="project-type">Python CLI</span></div>
             <h3>Break-Time</h3>
             <p>A small helper for previewing staged Git changes and creating a commit only when explicitly requested.</p>
             <ul class="tag-list" aria-label="Technologies and topics"><li>Python</li><li>Git</li><li>CLI</li></ul>
             <a class="project-link" href="https://github.com/Arish0limbu/Break-TIme" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
           </article>
-          <article class="project-card" data-category="apps">
+          <article class="project-card" data-category="apps" data-reveal>
             <div class="project-topline"><span class="project-index">03</span><span class="project-type">C++ application</span></div>
             <h3>Employee Attendance System</h3>
             <p>A role-based terminal app for employee records, attendance, and leave, saved in readable flat files.</p>
             <ul class="tag-list" aria-label="Technologies and topics"><li>C++</li><li>File I/O</li><li>CLI</li></ul>
             <a class="project-link" href="https://github.com/Arish0limbu/Project-II-EAMS" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
           </article>
-          <article class="project-card" data-category="web">
+          <article class="project-card" data-category="web" data-reveal>
             <div class="project-topline"><span class="project-index">04</span><span class="project-type">Interactive web</span></div>
             <h3>She Wants Flowers</h3>
             <p>A peaceful night garden where each tap or click grows a flower beneath a sky of stars.</p>
@@ -110,7 +112,7 @@
         <p class="projects-more">More experiments live on <a href="https://github.com/Arish0limbu?tab=repositories" target="_blank" rel="noreferrer">my GitHub profile <span aria-hidden="true">↗</span></a>.</p>
       </section>
 
-      <section class="learning section container" id="learning" aria-labelledby="learning-title">
+      <section class="learning section container" id="learning" aria-labelledby="learning-title" data-reveal>
         <div class="learning-card">
           <div class="section-label"><span>03</span> On my desk</div>
           <div><h2 id="learning-title">Always a new thing <em>to learn.</em></h2><p>I’m exploring the building blocks of the web and practicing software fundamentals through projects in different languages.</p></div>
@@ -118,7 +120,22 @@
         </div>
       </section>
 
-      <section class="contact section container" id="contact" aria-labelledby="contact-title">
+      <section class="studio section container" id="studio" aria-labelledby="studio-title" data-reveal>
+        <div class="studio-card">
+          <div class="section-label"><span>05</span> A tiny creative studio</div>
+          <div class="studio-copy">
+            <h2 id="studio-title">Make something <em>just for fun.</em></h2>
+            <p id="build-prompt" aria-live="polite">Build a tiny page that changes its colors when the sun goes down.</p>
+            <div class="studio-actions">
+              <button class="button button-light" id="next-prompt" type="button">Give me another idea <span aria-hidden="true">✳</span></button>
+              <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false">Pause decorative motion</button>
+            </div>
+          </div>
+          <div class="studio-doodle" aria-hidden="true"><span></span><span></span><span></span><i>✳</i></div>
+        </div>
+      </section>
+
+      <section class="contact section container" id="contact" aria-labelledby="contact-title" data-reveal>
         <div class="contact-inner">
           <div class="section-label"><span>04</span> Say hello</div>
           <h2 id="contact-title">Good things start<br />with <em>a conversation.</em></h2>
@@ -131,6 +148,7 @@
       </section>
     </main>
 
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" hidden><span aria-hidden="true">↑</span></button>
     <footer class="site-footer container">
       <a class="wordmark" href="#top" aria-label="Back to top">AL<span aria-hidden="true">.</span></a>
       <p>Designed and built while learning, one step at a time.</p>
