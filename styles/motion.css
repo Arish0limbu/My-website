@@ -19,3 +19,29 @@
   :root.has-motion [data-reveal] { opacity: 1; transform: none; }
   .hero-art { transform: none !important; }
 }
+
+/* Progress rail and floating return control */
+.reading-progress { position: fixed; z-index: 60; inset: 0 0 auto; height: 3px; pointer-events: none; }
+.reading-progress span { display: block; width: 100%; height: 100%; transform: scaleX(0); transform-origin: left center; background: var(--accent); box-shadow: 0 0 14px color-mix(in srgb, var(--accent) 60%, transparent); }
+.back-to-top { position: fixed; z-index: 50; right: max(18px, calc((100vw - 1120px) / 2)); bottom: 22px; width: 48px; height: 48px; border: 1px solid var(--line); border-radius: 50%; background: var(--ink); color: var(--paper); box-shadow: var(--shadow); cursor: pointer; font-size: 1.4rem; transition: transform var(--motion-fast) ease, opacity var(--motion-fast) ease; }
+.back-to-top:hover { transform: translateY(-4px); }
+.back-to-top[hidden] { display: none; }
+/* Small prompt card and its hand-drawn orbit */
+.studio-card { position: relative; display: grid; grid-template-columns: .7fr 1.3fr; gap: 32px; overflow: hidden; padding: clamp(28px, 5vw, 56px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+.studio-card .section-label { align-self: start; }
+.studio-copy { position: relative; z-index: 1; max-width: 650px; }
+.studio-copy h2 { margin: 0 0 16px; font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: -.05em; }
+.studio-copy h2 em { color: var(--accent); font-weight: 500; }
+.studio-copy p { max-width: 42ch; color: var(--muted); font-size: 1.08rem; }
+.studio-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 24px; }
+.motion-toggle { min-height: 42px; padding: 8px 13px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--ink); cursor: pointer; font-size: .8rem; font-weight: 700; }
+.motion-toggle[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+.studio-doodle { position: absolute; top: -70px; right: -30px; width: 270px; height: 270px; border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); border-radius: 50%; opacity: .65; animation: orbit-drift 54s linear infinite; }
+.studio-doodle::before, .studio-doodle::after { position: absolute; inset: 25px; border: 1px solid color-mix(in srgb, var(--green) 80%, transparent); border-radius: 50%; content: ""; }
+.studio-doodle::after { inset: 62px; }
+.studio-doodle span { position: absolute; top: 34px; left: 86px; width: 15px; height: 15px; border-radius: 50% 50% 50% 0; background: var(--accent); rotate: 35deg; }
+.studio-doodle span:nth-child(2) { top: 177px; left: 53px; width: 10px; height: 10px; background: var(--lime); }
+.studio-doodle span:nth-child(3) { top: 96px; left: 214px; width: 12px; height: 12px; background: var(--green); }
+.studio-doodle i { position: absolute; top: 122px; left: 120px; color: var(--accent); font-size: 28px; font-style: normal; }
+html[data-motion-paused="true"] *, html[data-motion-paused="true"] *::before, html[data-motion-paused="true"] *::after { animation-play-state: paused !important; transition-duration: 0s !important; scroll-behavior: auto !important; }
+@media (max-width: 680px) { .studio-card { grid-template-columns: 1fr; gap: 15px; padding: 28px 22px; }.studio-doodle { top: auto; right: -95px; bottom: -95px; width: 210px; height: 210px; }.studio-copy { padding-bottom: 46px; }.back-to-top { right: 16px; bottom: 16px; width: 44px; height: 44px; } }
